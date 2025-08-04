@@ -102,10 +102,10 @@ function App() {
         setGameOver(true);
         return;
       } else if (
-        ballBottom >= paddleTop &&
+        ballBottom > paddleTop &&
         ballPosition.y < paddleTop + PADDLE_HEIGHT &&
-        ballRight >= paddlePosition &&
-        ballLeft <= paddleRight
+        ballRight > paddlePosition &&
+        ballLeft < paddleRight
       ) {
         nextVel.y = -velocity.y;
       }

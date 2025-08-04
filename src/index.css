@@ -3,6 +3,12 @@ html, body {
   color: white;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .paddle {
   background: white;
   height: 20px;

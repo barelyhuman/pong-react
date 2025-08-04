@@ -1,0 +1,38 @@
+html, body {
+  background: black;
+  color: white;
+}
+
+.paddle {
+  background: white;
+  height: 20px;
+  width: 150px;
+  position: absolute;
+  bottom: 10px;
+  transition: all 150ms linear;
+}
+
+.ball {
+  background: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 99px;
+  position: absolute;
+  transition: left, right 150ms linear;
+}
+
+.game-container {
+  border: 1px solid #efefef;
+  position: relative;
+}
+
+.start-page {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-page .header {
+  font-size: 50px;
+}
